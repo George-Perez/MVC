@@ -63,6 +63,8 @@ C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.ApplicationInsig
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Newtonsoft.Json.dll
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\PagedList.dll
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\PagedList.Mvc.dll
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\System.Web.Helpers.dll
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\System.Web.Mvc.dll
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\System.Web.Optimization.dll
@@ -74,6 +76,8 @@ C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\WebGrease.dll
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\EntityFramework.xml
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\EntityFramework.SqlServer.xml
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\PagedList.xml
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\PagedList.Mvc.xml
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\System.Web.Helpers.xml
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\System.Web.Mvc.xml
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\System.Web.Optimization.xml
@@ -88,7 +92,6 @@ C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.AI.DependencyCol
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\bin\Microsoft.AI.Web.xml
-C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.csprojResolveAssemblyReference.cache
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.InitialMigraiton.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddEmployeesAndHoursControllers.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.ModifiedEmplyeeHours.resources
@@ -97,13 +100,14 @@ C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migration
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddedToController.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddingStoreTable.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddForeignKeyToStore.resources
-C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.csproj.GenerateResource.Cache
-C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.csproj.CoreCompileInputs.cache
-C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.dll
-C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.pdb
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddedModel.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddInventorystable.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddedViewModel.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.AddedIventoryManagementController.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.ChangedModel.resources
 C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.Migrations.UpdateInvModel.resources
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.csproj.GenerateResource.Cache
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.csproj.CoreCompileInputs.cache
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.dll
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.pdb
+C:\Users\georg\source\repos\TimeKepper\TimeKepper\obj\Debug\TimeKepper.csprojResolveAssemblyReference.cache

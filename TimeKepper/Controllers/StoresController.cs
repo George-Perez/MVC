@@ -47,18 +47,49 @@ namespace TimeKepper.Controllers
         // POST: Stores/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create([Bind(Include = "Id,name,description,EmployeeId")] Store store)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Stores.Add(store);
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    ViewBag.EmployeeId = new SelectList(db.Employees, "Id", "FirstName", store.EmployeeId);
+        //    return View(store);
+        //}
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,name,description,EmployeeId")] Store store)
+        public ActionResult CreateAjax([Bind(Include = "id,name,description,employeeid")] Store store)
         {
             if (ModelState.IsValid)
             {
                 db.Stores.Add(store);
                 db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+                return this.Json(new
+                {
+                    EnableSuccess = true,
+                    SuccessTitle = "Success",
+                    SuccessMsg = "Success"
 
-            ViewBag.EmployeeId = new SelectList(db.Employees, "Id", "FirstName", store.EmployeeId);
+                });
+            }
+            else
+            {
+                return this.Json(new
+                {
+                    EnableError = true,
+                    ErrorTitle = "Error",
+                    ErrorMsg = "Something goes wrong, please try again later"
+                });
+            }
+            
+
+            ViewBag.employeeid = new SelectList(db.Employees, "id", "firstname", store.EmployeeId);
             return View(store);
         }
 

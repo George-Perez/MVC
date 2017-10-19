@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using TimeKepper.Data;
 using TimeKepper.Models;
+using PagedList;
 
 namespace TimeKepper.Controllers
 {
@@ -16,9 +17,63 @@ namespace TimeKepper.Controllers
         private TimeKeeperContext db = new TimeKeeperContext();
 
         // GET: Employees
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
-            return View(db.Employees.ToList());
+
+            //We are sorting to sortOrder so the view can store temporarely (The most Current)
+        ViewBag.CurrentSort = sortOrder;
+
+            /*Checking to see if the search string id null
+             *If not , then we reset the page back to one.
+             */
+        
+            if (searchString != null)
+            {
+                page = 1;
+            }
+
+             else
+	        {
+                //If the search string is null, then we reasign the previous value to searchString.
+                searchString = currentFilter;
+	        }
+            
+            //We assign the value of the searchString to a viewbag to store the view
+            ViewBag.CurrentFilter = searchString;
+
+
+            //We need to cast it as IQueryable to be able to filter the values.
+            var Results = (IQueryable<Employee>)db.Employees;
+
+            //Checking to see what the sort catagory we are going to choose from
+            switch (sortOrder)
+            {
+                case "FirstName":
+                    Results = Results.OrderByDescending(x => x.FirstName);
+                    break;
+                case "LastName":
+                    Results = Results.OrderByDescending(x => x.LastName);
+                    break;
+                default:
+                    Results = Results.OrderBy(x => x.Id);
+                    break;
+            }
+
+            //if the user types anything in the search box, search the database.
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Results = Results.Where(x => x.FirstName.Contains(searchString) 
+                || x.LastName.Contains(searchString)
+                || x.Nickname.Contains(searchString));
+            }
+
+            //Defining the initial values of our pagedList
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+
+            //Passing the filters and Model back to the view
+            return View(Results.ToPagedList(pageNumber, pageSize));
+
         }
 
         // GET: Employees/Details/5
